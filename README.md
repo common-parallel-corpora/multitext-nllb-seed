@@ -1,28 +1,7 @@
 # Multi-text NLLB-Seed
-```
-├── README.md
-├── eng_Latn
-├── multitext
-│   ├── ace_Arab
-│   ├── ...
-│   └── vec_Latn
-├── order_files
-│   ├── ace_Arab-eng_Latn.order.txt
-│   ├── ...
-│   ├── eng_Latn-vec_Latn.order.txt
-│   ├── reference_ace_Arab-eng_Latn.order.txt
-│   ├── ...
-│   └── reference_eng_Latn-vec_Latn.order.txt
-└── re_ordered
-    ├── ace_Arab-eng_Latn
-    │   ├── ace_Arab
-    │   └── eng_Latn
-    ├── ...
-    └── eng_Latn-vec_Latn
-        ├── eng_Latn
-        └── vec_Latn
-```
+This package turns the original [bi-text nllb-seed dataset](https://github.com/facebookresearch/flores/blob/main/nllb_seed/README.md) into a multi-text dataset by matching the lines of the various eng_Latn reference files with a single [eng_Latn](data/Multitext-NLLB-Seed/eng_Latn) reference file.
 
-Method:
-- The reference eng_Latn was created by manually comparing all reference eng_Latn files and taking the cleanest consensus
-- Lines from the new reference eng_Latn were matched to lines in each of the existing eng_Latn files to output 
+The [matching results](data/Multitext-NLLB-Seed/order_files) are used to [re-order](data/Multitext-NLLB-Seed/re_ordered) the original dataset files to produce the [multitext-nllb dataset](data/Multitext-NLLB-Seed/multitext/).
+
+<img src="img/multitext-alignment.jpg" />
+
