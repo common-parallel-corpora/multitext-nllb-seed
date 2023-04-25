@@ -1,13 +1,17 @@
-# Multi-text NLLB-Seed
-This package turns the original [bi-text nllb-seed dataset](https://github.com/facebookresearch/flores/blob/main/nllb_seed/README.md) into a multi-text dataset by matching the lines of the various eng_Latn reference files with a single [eng_Latn](data/Multitext-NLLB-Seed/eng_Latn) reference file.
+# multi-text nllb-seed
+This package provides a multi-test version of the original [bi-text nllb-seed dataset](https://github.com/facebookresearch/flores/blob/main/nllb_seed/README.md). It contains:
+- A consensus [eng_Latn](data/Multitext-NLLB-Seed/eng_Latn) reference file.
+- [order_files](data/Multitext-NLLB-Seed/order_files) matching the original data file lines with the new reference.
+- [re-ordered](data/Multitext-NLLB-Seed/re_ordered) original data files
+- The resulting [multitext](data/Multitext-NLLB-Seed/multitext/) nllb-seed dataset
 
-The [matching results](data/Multitext-NLLB-Seed/order_files) are used to [re-order](data/Multitext-NLLB-Seed/re_ordered) the original dataset files to produce the [multitext-nllb dataset](data/Multitext-NLLB-Seed/multitext/).
+
 
 <img src="img/multitext-alignment.jpg" />
 
 
 ## Ackowledgement
-This work was done as part of a project supported my Meta Platforms, Inc. and Stanford University.
+This work was done as part of a project supported by Meta Platforms, Inc. and Stanford University.
 
 
 
