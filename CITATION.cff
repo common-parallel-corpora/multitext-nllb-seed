@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Doumbouya"
+  given-names: "Moussa"
+- family-names: "Sow"
+  given-names: "Abdoulaye"
+- family-names: "Doumbouya"
+  given-names: "Sere Moussa"
+- family-names: "Bangoura"
+  given-names: "Daouda"
+- family-names: "Bayo"
+  given-names: "Fode Moriba"
+- family-names: "Cisse"
+  given-names: "Solo Farabado"
+- family-names: "Diane"
+  given-names: "Djibrilla"
+- family-names: "Chris"
+  given-names: "Manning"
+title: "multi-text nllb seed"
+version: 1.0.0
+date-released: 2023-04-25
+url: "https://github.com/friasoft/fs-2023-001-multitext-nllb-seed"
