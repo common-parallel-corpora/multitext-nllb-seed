@@ -1,9 +1,9 @@
 # multi-text nllb-seed
 This package provides a multi-text version of the original [bi-text nllb-seed dataset](https://github.com/facebookresearch/flores/blob/main/nllb_seed/README.md). It contains:
-- A manually created consensus [eng_Latn](data/Multitext-NLLB-Seed/eng_Latn) reference file.
-- [order_files](data/Multitext-NLLB-Seed/order_files) matching the lines of each original data and the new eng_Latn reference.
-- [re-ordered](data/Multitext-NLLB-Seed/re_ordered) bitext data files
-- The resulting [multitext](data/Multitext-NLLB-Seed/multitext/) nllb-seed dataset
+- A manually created consensus [eng_Latn](data/Multitext-NLLB-Seed/eng_Latn) reference file,
+- [order_files](data/Multitext-NLLB-Seed/order_files) matching the lines of each original data and the new eng_Latn reference,
+- [re-ordered](data/Multitext-NLLB-Seed/re_ordered) bitext data files,
+- The resulting [multitext](data/Multitext-NLLB-Seed/multitext/) nllb-seed dataset.
 
 
 
