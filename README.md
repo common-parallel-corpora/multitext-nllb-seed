@@ -10,9 +10,13 @@ This package provides a multi-text version of the original [bi-text nllb-seed da
 
 <img src="img/multitext-alignment.jpg" />
 
+## Ackowledgement
+- Moussa Koulako Bala Doumbouya
+- Abdoulaye Sow
+- Christopher D Manning
 
 ## Ackowledgement
-This work was done as part of a project supported by Meta Platforms, Inc. and Stanford University.
+This work was done as part of a project supported by N'ko USA Inc., Friasoft, Meta Platforms, Inc. and Stanford University.
 
 
 
