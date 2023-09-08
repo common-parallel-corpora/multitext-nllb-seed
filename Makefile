@@ -150,3 +150,30 @@ data/Multitext-NLLB-Seed/multitext:
 	cp data/Multitext-NLLB-Seed/eng_Latn data/Multitext-NLLB-Seed/multitext/
 
 
+
+#######
+# NLLB MD
+#######
+
+# download and unzip data
+data/NLLB-MD:
+	wget --trust-server-names https://tinyurl.com/NLLBMDchat -O data/NLLB-MD-chat.zip
+	wget --trust-server-names https://tinyurl.com/NLLBMDnews -O data/NLLB-MD-news.zip
+	wget --trust-server-names https://tinyurl.com/NLLBMDhealth -O data/NLLB-MD-health.zip
+	unzip data/NLLB-MD-chat.zip -d data/
+	unzip data/NLLB-MD-news.zip -d data/
+	unzip data/NLLB-MD-health.zip -d data/
+
+# TODO
+# - (1) create eng_Latn reference files:
+#	data/Multitext-NLLB-MD/chat/train.eng_Latn
+#	data/Multitext-NLLB-MD/chat/valid.eng_Latn
+#	data/Multitext-NLLB-MD/chat/text.eng_Latn
+#	data/Multitext-NLLB-MD/health/train.eng_Latn
+#	data/Multitext-NLLB-MD/health/valid.eng_Latn
+#	data/Multitext-NLLB-MD/health/text.eng_Latn
+#	data/Multitext-NLLB-MD/news/train.eng_Latn
+#	data/Multitext-NLLB-MD/news/valid.eng_Latn
+#	data/Multitext-NLLB-MD/news/text.eng_Latn
+# - (2) reorder all files according to reference files
+# - (3) compose multitext-NLLB-MD
