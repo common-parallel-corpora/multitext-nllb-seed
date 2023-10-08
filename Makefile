@@ -164,16 +164,47 @@ data/NLLB-MD:
 	unzip data/NLLB-MD-news.zip -d data/
 	unzip data/NLLB-MD-health.zip -d data/
 
+# notes on reference file
+
+# - chat/train: minor differences on two lines
+# - chat/valid: no differences
+# - chat/test: no differences
+
+# - health:
+#	- review health/train
+#		- bho_Deva lines (1854-1861)
+#		- bho_Deva lines 327, 355, 1128
+#		- rus_Cyrl line 327, 355, 1128, 1626
+#	- healh/valid:
+#		- bho_Deva and rus_Cyrl have multiple re-ordered and modified lines
+#	- health/test
+#		- bho_Deva: multiple re-ordered lines
+#		- rus_Cyrl: multiple re-ordered lines. Lines with "#NAME?"
+
+
+# - news
+#	- news/train:
+#		- bho_Deva minor edits on a few lines. no re-ordered lines
+#		- rus_Cyrl minor edits related to quotation. no re-ordered lines
+#	- news/valid
+#		- bho_Deva minor edits on a few lines. no re-ordered lines
+#		- rus_Cyrl minor edits related to quotation. no re-ordered lines
+#	- news/test:
+#		- bho_Deva: sentence #202 changed. Small minor edits on 2 other lines.
+#	- rus_Cyrl minor edits related to quotation. no re-ordered lines
+	
+
+
 # TODO
 # - (1) create eng_Latn reference files:
 #	data/Multitext-NLLB-MD/chat/train.eng_Latn
 #	data/Multitext-NLLB-MD/chat/valid.eng_Latn
-#	data/Multitext-NLLB-MD/chat/text.eng_Latn
+#	data/Multitext-NLLB-MD/chat/test.eng_Latn
 #	data/Multitext-NLLB-MD/health/train.eng_Latn
 #	data/Multitext-NLLB-MD/health/valid.eng_Latn
-#	data/Multitext-NLLB-MD/health/text.eng_Latn
+#	data/Multitext-NLLB-MD/health/test.eng_Latn
 #	data/Multitext-NLLB-MD/news/train.eng_Latn
 #	data/Multitext-NLLB-MD/news/valid.eng_Latn
-#	data/Multitext-NLLB-MD/news/text.eng_Latn
+#	data/Multitext-NLLB-MD/news/test.eng_Latn
 # - (2) reorder all files according to reference files
 # - (3) compose multitext-NLLB-MD

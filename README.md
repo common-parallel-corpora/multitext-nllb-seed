@@ -10,6 +10,29 @@ This package provides a multi-text version of the original [bi-text nllb-seed da
 
 <img src="img/multitext-alignment.jpg" />
 
+
+
+# multi-text nllb-md
+## 2023-10-08 Progress notes
+- Manually created new reference files under [data/Multitext-NLLB-MD/](data/Multitext-NLLB-MD/)
+- Things that need review:
+    - health:
+        - review health/train
+            - bho_Deva lines (1854-1861)
+            - bho_Deva lines 327, 355, 1128
+            - rus_Cyrl line 327, 355, 1128, 1626
+        - healh/valid:
+            - bho_Deva and rus_Cyrl have multiple re-ordered and modified lines
+        - health/test
+            - bho_Deva: multiple re-ordered lines
+            - rus_Cyrl: multiple re-ordered lines. Lines with "#NAME?", "#Error"
+    - news
+        - news/test:
+            - bho_Deva: sentence #202 changed. Small minor edits on 2 other lines.
+	
+
+
+
 ## Ackowledgement
 - Moussa Koulako Bala Doumbouya
 - Abdoulaye Sow
