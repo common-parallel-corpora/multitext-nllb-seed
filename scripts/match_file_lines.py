@@ -4,7 +4,6 @@ import numpy as np
 import scipy
 import scipy.spatial
 import scipy.optimize
-from sklearn.metrics.pairwise import cosine_distances
 from tqdm import tqdm
 import ssl
 ssl._create_default_https_context = ssl._create_unverified_context
